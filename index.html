@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website With Login & Registration | Ahmed Rizk</title>
+    <script src="script.js" defer></script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js" defer></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js" defer></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="logo">
+                <h2>A<span>R</span>.</h2>
+            </div>
+            <nav class="navgition">
+                <a href="#">Home</a>
+                <a href="#">Services</a>
+                <a href="#">Portfolio</a>
+                <a href="#">Contact</a>
+                <button class="btn">Login</button>
+            </nav>
+        </header>
+        <div class="wrapper">
+            <span class="icon-close">
+                <ion-icon name="close"></ion-icon>
+            </span>
+            <div class="form-box login">
+                <h2>Login</h2>
+                <form action="#">
+                    <div class="input">
+                        <span class="icon"><ion-icon name="mail"></ion-icon></span>
+                        <input type="email" title="email" required>
+                        <label for="email">Email</label>
+                    </div>
+                    <div class="input">
+                        <span class="icon"><ion-icon name="lock-closed"></ion-icon></span>
+                        <input type="password" title="password" required>
+                        <label for="password">Password</label>
+                    </div>
+                    <div class="remember-me">
+                        <label><input type="checkbox" name="remember-me">
+                        Remember Me</label>
+                        <a href="#">forget password ?</a>
+                    </div>
+                    <button type="submit" class="btn">Login</button>
+                    <div class="register-btn">
+                        <p>Don't have an account ? <a class="register-link" href="#">Register</a></p>
+                    </div>
+                </form>
+            </div>
+            <div class="form-box register">
+                <h2>Register</h2>
+                <form action="#">
+                    <div class="input">
+                        <span class="icon">
+                            <ion-icon name="person"></ion-icon>
+                        </span>
+                        <input type="text" title="user name" required>
+                        <label for="text">User Name</label>
+                    </div>
+                    <div class="input">
+                        <span class="icon"><ion-icon name="mail"></ion-icon></span>
+                        <input type="email" title="email" required>
+                        <label for="email">Email</label>
+                    </div>
+                    <div class="input">
+                        <span class="icon"><ion-icon name="lock-closed"></ion-icon></span>
+                        <input type="password" title="password" required>
+                        <label for="password">Password</label>
+                    </div>
+                    <div class="remember-me">
+                        <label><input type="checkbox" name="remember-me">
+                        I agree to terms & conditions</label>
+                    </div>
+                    <button type="submit" class="btn">Login</button>
+                    <div class="register-btn login-btn">
+                        <p>Have an account ? <a href="#" class="login-link">Login</a></p>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
